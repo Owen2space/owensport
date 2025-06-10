@@ -3,110 +3,483 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Owen Muchungi | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-        
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">OM</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </header>
 
-    
     <section id="home" class="hero">
         <div class="hero-content">
-            <img src="profile.jpeg" alt="Owen Muchungi" class="profile-img">
-            <h1>Owen Muchungi</h1>
-            <div class="typing-text">
-                <p>Web Developer | Designer | Creative Thinker</p>
+            <div class="hero-text">
+                <h1>Hello, I'm <span class="highlight">Owen Muchungi</span></h1>
+                <div class="typing-text">
+                    <p>Software Developer | ICT Specialist | Creative Problem Solver</p>
+                </div>
+                <p class="hero-description">Turning ideas into elegant, functional solutions</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
             </div>
+            <div class="hero-image">
+                <img src="profile.jpeg" alt="Owen Muchungi" class="profile-img">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <span class="arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+            </a>
         </div>
     </section>
 
-    
     <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I am a dedicated and hardworking individual. I possess strong skills in 
-            software development and am proficient in various programming languages.
-             My work experience includes roles as an attaché and a 
-            research assistant, where I applied and improved my skills in IT</p> 
-
-        <h4>Core skills and Competencies</h4>
-        <ol class="skills-list">
-            <li><strong>Software Development:</strong> Proficient in Kotlin, JavaScript, Python, HTML, and CSS.</li>
-            <li><strong>IT Skills:</strong> Proficient in using Microsoft Word, Publisher, and Excel.</li>
-            <li><strong>Time Management:</strong> Demonstrates excellent time management skills.</li>
-            <li><strong>Communication Skills:</strong> Proficient in both verbal and written communication.</li>
-            <li><strong>Flexibility:</strong> Adaptable and open-minded, quick to learn new skills.</li>
-            <li><strong>Teamwork:</strong> Collaborates effectively with colleagues to achieve common goals.</li>
-        </ol>
-    </section>
-
- 
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5</h3>
-                    <p>Semantic markup, Forms, Multimedia</p>
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Professional Summary</h3>
+                    <p>Versatile and results-oriented Software Developer and ICT Support Specialist with a Diploma in ICT and proven experience in software development, web technologies, mobile app development, and IT support. Demonstrated ability to deliver practical solutions in both public and private sector environments.</p>
+                    
+                    <h3>Career Objective</h3>
+                    <p>To contribute my software development and ICT support skills in a forward-thinking organization. I aim to enhance operational efficiency through innovative solutions, while continuously growing my technical expertise and supporting the achievement of organizational goals.</p>
+                    
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kenya</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>owenmuchungi@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+254 757 684 472</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS3</h3>
-                    <p>Responsive Design, Animations, Flexbox/Grid</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                    <p>DOM Manipulation, ES6+, APIs</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Kotlin</h3>
-                    <p>Android Development, Backend Services</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-text">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-text">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-text">Happy Clients</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <img src="project.jpeg" alt="Project 1">
-                <h2>Project</h2>
-                <p>Luisa Money is a digital platform dedicated to providing secure, fast, and reliable money
-                     transfer services to users who need to send funds to loved ones or manage their finances conveniently.</p>
-                <a href="#" class="btn">View Project</a>
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Professional Experience</h2>
+                <div class="section-line"></div>
             </div>
-            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <span>Feb 2024 - Apr 2024</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Research Assistant</h3>
+                        <h4>Ministry of Health, Kenya</h4>
+                        <ul>
+                            <li>Collected, validated, and entered field data for public health projects and research studies.</li>
+                            <li>Collaborated with cross-functional teams to ensure data accuracy and integrity.</li>
+                            <li>Assisted in data analysis and reporting for internal and external stakeholders.</li>
+                            <li>Supported the use of ICT tools in data collection and management processes.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <span>Sep 2022 - Dec 2022</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>ICT Attaché (Internship)</h3>
+                        <h4>Kenya Medical Training College (KMTC)</h4>
+                        <ul>
+                            <li>Gained hands-on experience in ICT applications, software support, and maintenance.</li>
+                            <li>Assisted with troubleshooting and resolving hardware and software issues.</li>
+                            <li>Conducted system updates, backups, and basic network maintenance.</li>
+                            <li>Supported the documentation and maintenance of IT inventory and asset records.</li>
+                            <li>Worked closely with ICT team members to improve service delivery and end-user support.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-  
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skills & Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-wrapper">
+                <div class="skills-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML5/CSS3</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js"></i>
+                            <h4>JavaScript</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-python"></i>
+                            <h4>Python</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-android"></i>
+                            <h4>Kotlin</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database"></i>
+                            <h4>SQLite/MySQL</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-git-alt"></i>
+                            <h4>Git</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Mobile Development</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-file-alt"></i>
+                            <h4>MS Office</h4>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Professional Skills</h3>
+                    <div class="soft-skills">
+                        <div class="soft-skill">
+                            <span>Time Management</span>
+                            <div class="soft-skill-level">
+                                <div class="soft-skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="soft-skill">
+                            <span>Communication</span>
+                            <div class="soft-skill-level">
+                                <div class="soft-skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="soft-skill">
+                            <span>Adaptability</span>
+                            <div class="soft-skill-level">
+                                <div class="soft-skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="soft-skill">
+                            <span>Teamwork</span>
+                            <div class="soft-skill-level">
+                                <div class="soft-skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="soft-skill">
+                            <span>Problem Solving</span>
+                            <div class="soft-skill-level">
+                                <div class="soft-skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project.jpeg" alt="Luisa Money">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Mobile App</span>
+                            <span>Kotlin</span>
+                        </div>
+                        <h3>Luisa Money</h3>
+                        <p>A digital platform dedicated to providing secure, fast, and reliable money transfer services to users who need to send funds to loved ones or manage their finances conveniently.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline"><i class="fas fa-globe"></i> Live Demo</a>
+                            <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project2.png" alt="Der-Volt">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>FinTech</span>
+                            <span>JavaScript</span>
+                            <span>Python Flask</span>
+                            <span>SQLite</span>
+                        </div>
+                        <h3>Der-Volt</h3>
+                        <p>An online platform designed to simplify depositing and withdrawing funds between Kenyan users and Deriv.com accounts. The platform offers competitive forex rates with a smart spread model, automatic token transfers, and seamless integration with local payment methods like M-Pesa and bank transfers.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline"><i class="fas fa-globe"></i> Live Demo</a>
+                            <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project3.png" alt="Aquabeauty Website">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Business Website</span>
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                        </div>
+                        <h3>Aquabeauty Website</h3>
+                        <p>A clean, responsive website created for a beauty and skincare brand. The goal of the project is to showcase Aquabeauty's products, services, and brand story with a visually appealing and user-friendly interface.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline"><i class="fas fa-globe"></i> Live Demo</a>
+                            <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education & Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Diploma in Information and Communication Technology (ICT)</h3>
+                        <h4>Michuki Technical Training Institute</h4>
+                        <p class="education-date">2021 - 2024</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Certificate in Mobile App Development</h3>
+                        <h4>Modcom Institute of Technology</h4>
+                        <p class="education-date">2021</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Kenya Certificate of Secondary Education (KCSE)</h3>
+                        <h4>Nyeri Baptist High School</h4>
+                        <p class="education-date">2017 - 2020</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Kenya Certificate of Primary Education (KCPE)</h3>
+                        <h4>Emmanuel Learning Center</h4>
+                        <p class="education-date">2016</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interests" class="interests">
+        <div class="container">
+            <div class="section-header">
+                <h2>Interests & Hobbies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Football</h3>
+                    <p>Active team player in local leagues</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3>Swimming</h3>
+                    <p>Personal fitness and recreation</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>App Development</h3>
+                    <p>Exploring emerging technologies</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Hackathons</h3>
+                    <p>Participating in coding challenges</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-            <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> owenspace36@gmail.com</a>
-            <a href="https://www.linkedin.com/in/owen-muchungi-8b8547251/"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/Owen2space"><i class="fab fa-github"></i> GitHub</a>
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:owenmuchungi@gmail.com">owenmuchungi@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <a href="tel:+254757684472">+254 757 684 472</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/owen-muchungi-8b8547251/" target="_blank">owen-muchungi</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/Owen2space" target="_blank">Owen2space</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form" action="mailto:owenmuchungi@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Owen Muchungi. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">OM</div>
+                <p>Designing and developing exceptional digital experiences</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/owen-muchungi-8b8547251/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Owen2space" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Owen Muchungi. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html> 
